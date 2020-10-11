@@ -1,0 +1,261 @@
+/* Master styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+
+html body {
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	min-height: 100%;
+	margin-bottom: -150px;
+}
+
+.container::after {
+	content: "";
+	display: block;
+}
+
+.content-wrapper {
+		overflow: auto;
+}
+
+/* Footer styles */
+
+.footer, .container::after {
+	background-color: #202020;
+	position: relative;
+	margin-top: -3px;
+	bottom: 0px;
+	height: 150px;
+}
+
+.footer-items .email{
+	text-align: center;
+	padding: 20px 0px 10px 0px;
+}
+
+.footer-items .email a {
+	text-decoration: none;
+	color: #7a7a7a;
+	letter-spacing: 2px;
+}
+
+.footer-items .email a:hover {
+	color: #bac0c0;
+	cursor: pointer;
+}
+
+.footer-items .logos {
+	position: relative;
+	padding-left: 49%;
+	padding-right: 49%;
+}
+
+.footer-items .logos  .linkedin1{position: absolute;}
+.footer-items .logos  .linkedin2{position: absolute;}
+
+.footer-items .logos img{
+	width: 25px;
+	height: auto;
+}
+
+.footer-items .logos img:hover{
+	cursor: pointer;
+}
+
+.footer-items .logos:hover .linkedin2{
+	visibility: hidden;
+}
+
+.footer-bottom {
+	position: absolute;
+	background-color: #101010;
+	color: #7a7a7a;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 15px;
+}
+
+/* Nav styles */
+
+.nav-wrapper {
+	display: flex;
+	padding: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.leftside {
+	display: flex;
+}
+
+.nav-wrapper  .leftside  div {
+	margin-right: 20px;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+	text-decoration: none;
+	color: #7a7a7a;
+	transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+	border-bottom: 1px solid #7a7a7a;
+}
+
+.nav-link-wrapper a:hover {
+	color: #ba0c0c;
+}
+
+.active-nav-link {
+	border-bottom: 1px solid #7a7a7a;
+}
+
+.active-nav-link a {
+	color: #ba0c0c !important;
+}
+
+/* Portfolio styles*/
+
+.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.portfolio-item-wrapper {
+	position: relative;
+}
+
+.portfolio-img-background {
+	height: 700px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.logo-wrapper img {
+	width: 15%;
+	margin-bottom: 40px;
+}
+
+.img-text-wrapper .subtitle{
+	transition: 1s;
+	font-weight: 500;
+	color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+	font-weight: 500;
+	color: #ba0c0c;
+}
+
+.img-darken {
+	transition: 1s;
+	filter: brightness(10%);
+}
+
+/* About page styles*/
+.two-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: -3px;
+}
+
+.profile-img-wrapper {
+	width: 100%;
+}
+
+.profile-img-wrapper img{
+	width: 100%;
+}
+
+.profile-content-wrapper {
+	padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+	color: #ba0c0c;
+}
+
+/* values */
+
+.one-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.one-column-wrapper .about-item-wrapper {
+	position: relative;
+}
+
+.one-column-wrapper .img-background {
+	height: 700px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.one-column-wrapper .img-text-wrapper {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.one-column-wrapper .logo-wrapper img {
+	width: 15%;
+	margin-bottom: 40px;
+}
+
+.one-column-wrapper .img-text-wrapper .subtitle{
+	transition: 1s;
+	font-weight: 500;
+	color: transparent;
+}
+
+.one-column-wrapper .img-text-wrapper:hover .subtitle {
+	font-weight: 500;
+	color: #ba0c0c;
+}
+
+.one-column-wrapper .img-darken {
+	transition: 1s;
+	filter: brightness(10%);
+}
