@@ -34,41 +34,44 @@ html body {
 	height: 150px;
 }
 
-.footer-items .email{
-	text-align: center;
-	padding: 20px 0px 10px 0px;
-}
-
-.footer-items .email a {
-	text-decoration: none;
-	color: #7a7a7a;
-	letter-spacing: 2px;
-}
-
-.footer-items .email a:hover {
-	color: #bac0c0;
-	cursor: pointer;
-}
-
-.footer-items .logos {
+.footer .logos {
 	position: relative;
-	padding-left: 49%;
-	padding-right: 49%;
+	text-align: center;
+	margin-left: 45.5%;
 }
 
-.footer-items .logos  .linkedin1{position: absolute;}
-.footer-items .logos  .linkedin2{position: absolute;}
+.footer .logos ul {
+	position: absolute;
+	width: 400px;
+	margin-left: 0 auto;
+	list-style: none;
+	display: flex;
+}
 
-.footer-items .logos img{
+.footer .logos ul li {
+	float: left;
+	margin: 15px 20px;
+}
+
+.footer .logos  .mail1{position: absolute;}
+.footer .logos  .mail2{position: absolute;}
+.footer .logos  .linkedin1{position: absolute;}
+.footer .logos  .linkedin2{position: absolute;}
+
+.footer .logos img{
 	width: 25px;
 	height: auto;
 }
 
-.footer-items .logos img:hover{
+.footer .logos img:hover{
 	cursor: pointer;
 }
 
-.footer-items .logos:hover .linkedin2{
+.footer .logos .mail2:hover{
+	visibility: hidden;
+}
+
+.footer .logos .linkedin2:hover{
 	visibility: hidden;
 }
 
@@ -314,6 +317,12 @@ html body {
 	filter: brightness(10%);
 }
 
+@media only screen and (max-width:1400px) {
+	.footer .logos {
+		margin-left: 43%;
+	}
+}
+
 @media only screen and (max-width:1000px) {
 	.gallery-items-wrapper {
 		display: grid;
@@ -322,5 +331,38 @@ html body {
 	.two-column-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+	.footer .logos {
+		margin-left: 40%;
+	}
+}
+
+@media only screen and (max-width:900px) {
+	.portfolio-img-background {
+		height: 500px;
+	}
+	.footer .logos {
+		margin-left: 38%;
+	}
+}
+
+@media only screen and (max-width:700px) {
+	.portfolio-img-background {
+		height: 350px;
+	}
+	.img-text-wrapper {
+		font-size: 14px;
+	}
+	.logo-wrapper img {
+		width: 40%;
+	}
+	.footer .logos {
+		margin-left: 35%;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	.footer .logos {
+		margin-left: 31%;
 	}
 }
