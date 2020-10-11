@@ -362,6 +362,9 @@ html body {
 }
 
 @media only screen and (max-width:500px) {
+	.nav-wrapper {
+		padding: 15px;
+	}
 	.footer .logos {
 		margin-left: 31%;
 	}
