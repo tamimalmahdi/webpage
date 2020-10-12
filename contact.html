@@ -3,6 +3,7 @@
 	<head>
 		<title>Tamim Almahdi</title>
 		<link rel="icon" href="logo.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	</head>
@@ -29,9 +30,20 @@
 				</div>
 			</div>
 
-			<div class="content-wrapper">
-        <form class="form">
-        </form>
+			<div class="contact-wrapper">
+				<h1>Contact Me</h1>
+				<div class="border"></div>
+        <form class="contact-form" action="https://formspree.io/f/xrgopgky" target="_blank" method="post" id="my-form">
+					<input type="text" class="contact-form-text" placeholder="Your name" name="name" required>
+					<input type="email" class="contact-form-text" placeholder="Your email" name="email" required>
+					<textarea class="contact-form-text" placeholder="Your message" name="message" required></textarea>
+					<input type="submit" class="contact-form-btn" value="Send">
+					<div id="status"></div>
+				</form>
+			</div>
+
+			<div class="bot-img">
+				<div class="img-background" style="background-image: url(images/contact.jpg);"></div>
 			</div>
 
 		</div>

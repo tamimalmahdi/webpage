@@ -317,6 +317,122 @@ html body {
 	filter: brightness(10%);
 }
 
+/*Conact styles*/
+
+.contact-wrapper {
+	background: url(images/gd2.jpg) no-repeat center;
+	background-size: cover;
+	padding: 40px 0px;
+}
+
+.contact-wrapper h1 {
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.border {
+	width: 100px;
+	height: 10px;
+	background: #7a7a7a;
+	margin: 40px auto;
+}
+
+.contact-form {
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.contact-form-text {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: #202020;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+}
+
+.contact-form-text:hover {
+	box-shadow: 0 0 10px 4px #ba0c0c;
+}
+
+textarea.contact-form-text {
+	resize: none;
+	height: 120px;
+}
+
+.contact-form-btn {
+	width: 100%;
+	border: 0;
+	background: #7a7a7a;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+	background-color: #ba0c0c;
+}
+
+#status {
+	width: 100%;
+	max-width: 600px;
+	text-align: center;
+	padding: 5px 0px;
+	border-radius: 20px;
+	color: #fff;
+}
+
+#status.success {
+	background-color: green;
+	animation: status 3s ease forwards;
+}
+
+#status.error {
+	background-color: #ba0c0c;
+	animation: status 3s ease forwards;
+}
+
+.bot-img {
+	height: 500px;
+	width: 100%;
+}
+
+.bot-img .img-background {
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@keyframes status {
+	0% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	90% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	100% {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+/*Changing page size*/
+
 @media only screen and (max-width:1400px) {
 	.footer .logos {
 		margin-left: 43%;
@@ -363,7 +479,7 @@ html body {
 
 @media only screen and (max-width:500px) {
 	.nav-wrapper {
-		padding: 20px 15px;
+		padding: 25px 15px;
 	}
 	.footer .logos {
 		margin-left: 31%;
