@@ -100,6 +100,12 @@ html body {
 	display: flex;
 }
 
+.rightside .brand a{
+	text-decoration: none;
+	color: #7a7a7a;
+	letter-spacing: 3px;
+}
+
 .nav-wrapper  .leftside  div {
 	margin-right: 20px;
 	text-transform: uppercase;
